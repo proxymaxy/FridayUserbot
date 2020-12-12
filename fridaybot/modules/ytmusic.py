@@ -42,7 +42,7 @@ async def _(event):
         await myself_stark.edit("`Song Downloaded Sucessfully. Let Me Upload it Here.`")
     else:
         await myself_stark.edit("`SomeThing Went Wrong. Try Again After Sometime..`")
-    capy = f"**Song Name ➠** `{thum}` \n**Requested For ➠** `{urlissed}` \n**Channel ➠** `{thums}` \n**Link ➠** `{mo}`"
+    capy = f"**Song Name ➠** `{thum}` "
     await borg.send_file(
         event.chat_id,
         km,
@@ -53,7 +53,7 @@ async def _(event):
         performer=thums,
         supports_streaming=True,
     )
-    await myself_stark.edit("`Song Uploaded. By (C) @FridayOT`")
+    await myself_stark.edit("`Song Uploaded. By (C) @proxy_maxy`")
     for files in (sedlyf, km):
         if files and os.path.exists(files):
             os.remove(files)
